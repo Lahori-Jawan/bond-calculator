@@ -1,5 +1,13 @@
 export type CouponFrequency = "annual" | "semi-annual";
 
+export interface BondInput {
+  faceValue: number;
+  annualCouponRate: number;
+  marketPrice: number;
+  yearsToMaturity: number;
+  couponFrequency: CouponFrequency;
+}
+
 export interface CashFlowRow {
   period: number;
   paymentDate: string;

@@ -1,6 +1,5 @@
 import { Injectable } from "@nestjs/common";
-import { BondInput } from "./bond.schema";
-import { BondCalculationResponse, CashFlowRow } from "./bond.types";
+import { BondCalculationResponse, BondInput, CashFlowRow } from "./bond.types";
 
 @Injectable()
 export class BondService {
