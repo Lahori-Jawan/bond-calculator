@@ -1,0 +1,25 @@
+Build a Bond Yield Calculator web app. You will present it at the interview and walk through your implementation. Be prepared to make live changes on the spot during the interview.
+
+Implementation Note
+This task is expected to be built using an agentic AI coding assistant such as Claude Code, Cursor, or similar. You will be evaluated not just on the output but on how effectively you used the tool — come prepared to explain your prompting approach and the decisions you made along the way.
+
+Inputs
+ ∙ Face value
+ ∙ Annual coupon rate (%)
+ ∙ Market price
+ ∙ Years to maturity
+ ∙ Coupon frequency (annual / semi-annual)
+
+Outputs
+ ∙ Current yield
+ ∙ Yield to Maturity (YTM)
+ ∙ Total interest earned over life of bond
+ ∙ Premium or discount indicator (trading above/below face value)
+
+Cash Flow Schedule
+Show a table with: period, payment date, coupon payment, cumulative interest, remaining principal
+
+Tech Stack
+ ∙ Frontend: React
+ ∙ Backend: NestJS
+ ∙ Language: TypeScript throughout

@@ -1,0 +1,25 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      PORT: "3000"
+      FRONTEND_ORIGIN: "http://localhost:${FRONTEND_PORT:-5173}"
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+      args:
+        VITE_API_BASE_URL: "/api"
+
+  haproxy:
+    build:
+      context: .
+      dockerfile: haproxy/Dockerfile
+    depends_on:
+      - backend
+      - frontend
+    ports:
+      - "${FRONTEND_PORT:-5173}:80"
