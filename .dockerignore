@@ -6,3 +6,8 @@ npm-debug.log*
 .env
 .env.*
 .git
+haproxy
+docker-compose.yml
+backend/Dockerfile
+frontend/Dockerfile
+*.md
